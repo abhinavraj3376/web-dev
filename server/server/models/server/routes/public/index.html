@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget Travel Platform</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Budget Travel Itineraries</h1>
+
+    <div class="filter-section">
+      <label>Location:</label>
+      <input id="location" type="text" placeholder="Enter location">
+      
+      <label>Budget:</label>
+      <input id="budget" type="text" placeholder="Enter budget (low, medium, high)">
+      
+      <label>Interests:</label>
+      <input id="interests" type="text" placeholder="Enter interests (e.g., hiking, beach)">
+      
+      <button onclick="fetchItineraries()">Search</button>
+    </div>
+
+    <div id="itineraries" class="itineraries-section"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
